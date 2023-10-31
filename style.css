@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'open sans', sans-serif;
+}
+
+body {
+    background: var(--Dark-mode-background, #1B1928);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.e_p_background_svg {
+    width: 99vw;
+    height: 99vh;
+    flex-shrink: 0;
+}
+.e_p_svg_path{
+    transition-duration: 0.2s;
+    transform-origin: center;
+}
+
+.e_p_contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: #ffffff;
+}
+
+.e_p_type_of_error {
+    text-align: center;
+}
+
+.e_p_type_of_error span {
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.e_p_cause_of_error p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.4px;
+    margin-top: 3px;
+}
+
+.e_p_main_button_section {
+    width: 100%;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.e_p_button {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: white;
+    text-align: center;
+    background-color: #566AED;
+    border: none;
+    border-radius: 5px;
+    height: 33px;
+    width: 154px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+/* .e_p_button:hover{
+    background-color: #4055dd;
+    transform: scale(1.1);
+    transform-origin: center;
+} */
+@media only screen and (max-width: 800px) {
+    .e_p_svg_path {
+        transform: scale(1.5);
+        transform-origin: center;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .e_p_svg_path {
+        transform: scale(2);
+        transform-origin: center;
+    }
+    .e_p_type_of_error span {
+        font-size: 35px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .e_p_cause_of_error p {
+        font-weight: 100;
+        font-size: 14px;
+        letter-spacing: 0.1px;
+    }
+}
+@media only screen and (max-width: 420px) {
+   
+    .e_p_type_of_error span {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .e_p_cause_of_error p {
+        font-size: 15px;
+        width: 166px;
+    }
+    .e_p_button {
+        font-size: 14px;
+        font-weight: 100;
+        width: 130px;
+    }
+}
